@@ -1,13 +1,12 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import { LightColor, DarkColor } from '../../globalStyles'
+import { DarkColor } from '../../globalStyles'
 
 export const FooterWrapper = styled.div`
   background-image: url('https://img5.goodfon.ru/wallpaper/nbig/7/20/fon-kamen-tsvet-razvody-tekstura-piatna-bezhevyi-kamennyi-vk.jpg');
   background-size: cover;
   font-family: 'Cormorant Garamond', serif;
-  max-height: 100vh;
-  min-height: 30vh;
+  padding: 1rem;
   align-items: center;
 `
 
@@ -16,7 +15,6 @@ export const FooterSection = styled.section`
   margin: 0 auto;
   text-align: center;
   padding-top: 2rem;
-  padding-bottom: 1rem;
   font-size: 1.5rem;
   color: ${DarkColor};
 `
@@ -35,16 +33,12 @@ export const BigBox = styled.ul`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 1rem;
-  @media screen and (max-width: 600px) {
-    flex-direction: column;
-    align-items: center;
-  }
 `
 
 export const SmallBox = styled.div`
   flex: 1 1 50%;
-  padding: 0 2rem;
+  padding: 1rem 2rem;
+
   display: ${({ display }) => (display ? 'flex' : 'block')};
   justify-content: space-around;
   align-items: center;

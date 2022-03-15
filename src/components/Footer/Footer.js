@@ -1,18 +1,5 @@
 import React from 'react'
-import {
-  FooterWrapper,
-  FooterSection,
-  FooterBlock,
-  FooterLink,
-  FooterItem,
-  FooterItemLi,
-  FooterLinks,
-  FooterGrid,
-  // GridBigBox,
-  // GridSmallBox,
-  BigBox,
-  SmallBox
-} from './FooterStyles'
+import { FooterWrapper, FooterSection, FooterBlock, FooterLink, FooterItem, FooterItemLi, FooterLinks, BigBox, SmallBox } from './FooterStyles'
 import { FaInstagramSquare, FaFacebookSquare, FaTwitterSquare } from 'react-icons/fa'
 import { data, schedule } from '../../data/NavbarData'
 
@@ -21,7 +8,6 @@ export default function Footer() {
     <FooterWrapper>
       <FooterSection>
         <FooterBlock>
-          {/* <FooterGrid> */}
           <BigBox>
             {data.map((item, index) => (
               <FooterItemLi key={index}>
@@ -54,7 +40,6 @@ export default function Footer() {
               </FooterLink>
             </FooterItem>
           </SmallBox>
-          {/* </FooterGrid> */}
         </FooterBlock>
       </FooterSection>
 
