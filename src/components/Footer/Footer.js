@@ -8,8 +8,10 @@ import {
   FooterItemLi,
   FooterLinks,
   FooterGrid,
-  GridBigBox,
-  GridSmallBox
+  // GridBigBox,
+  // GridSmallBox,
+  BigBox,
+  SmallBox
 } from './FooterStyles'
 import { FaInstagramSquare, FaFacebookSquare, FaTwitterSquare } from 'react-icons/fa'
 import { data, schedule } from '../../data/NavbarData'
@@ -19,40 +21,40 @@ export default function Footer() {
     <FooterWrapper>
       <FooterSection>
         <FooterBlock>
-          <FooterGrid>
-            <GridBigBox>
-              {data.map((item, index) => (
-                <FooterItemLi key={index}>
-                  <FooterLinks to={item.to}>{item.text}</FooterLinks>
-                </FooterItemLi>
-              ))}
-            </GridBigBox>
-            <GridSmallBox>
-              {schedule.map((item, index) => (
-                <FooterItem block key={index}>
-                  {item.text}
-                </FooterItem>
-              ))}
-            </GridSmallBox>
+          {/* <FooterGrid> */}
+          <BigBox>
+            {data.map((item, index) => (
+              <FooterItemLi key={index}>
+                <FooterLinks to={item.to}>{item.text}</FooterLinks>
+              </FooterItemLi>
+            ))}
+          </BigBox>
+          <SmallBox>
+            {schedule.map((item, index) => (
+              <FooterItem block key={index}>
+                {item.text}
+              </FooterItem>
+            ))}
+          </SmallBox>
 
-            <GridSmallBox display>
-              <FooterItem>
-                <FooterLink icon href="https://instagram.com" target={'_blank'}>
-                  <FaInstagramSquare size={45} />
-                </FooterLink>
-              </FooterItem>
-              <FooterItem>
-                <FooterLink icon href="https://facebook.com" target={'_blank'}>
-                  <FaFacebookSquare size={45} />
-                </FooterLink>
-              </FooterItem>
-              <FooterItem>
-                <FooterLink icon href="https://twitter.com" target={'_blank'}>
-                  <FaTwitterSquare size={45} />
-                </FooterLink>
-              </FooterItem>
-            </GridSmallBox>
-          </FooterGrid>
+          <SmallBox display>
+            <FooterItem>
+              <FooterLink icon href="https://instagram.com" target={'_blank'}>
+                <FaInstagramSquare size={45} />
+              </FooterLink>
+            </FooterItem>
+            <FooterItem>
+              <FooterLink icon href="https://facebook.com" target={'_blank'}>
+                <FaFacebookSquare size={45} />
+              </FooterLink>
+            </FooterItem>
+            <FooterItem>
+              <FooterLink icon href="https://twitter.com" target={'_blank'}>
+                <FaTwitterSquare size={45} />
+              </FooterLink>
+            </FooterItem>
+          </SmallBox>
+          {/* </FooterGrid> */}
         </FooterBlock>
       </FooterSection>
 

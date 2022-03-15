@@ -5,15 +5,18 @@ import { LightColor, DarkColor } from '../../globalStyles'
 export const FooterWrapper = styled.div`
   background-image: url('https://img5.goodfon.ru/wallpaper/nbig/7/20/fon-kamen-tsvet-razvody-tekstura-piatna-bezhevyi-kamennyi-vk.jpg');
   background-size: cover;
-  height: 65vh;
   font-family: 'Cormorant Garamond', serif;
+  max-height: 100vh;
+  min-height: 30vh;
+  align-items: center;
 `
 
 export const FooterSection = styled.section`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 3rem 0 0 0;
+  width: 80vw;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
   font-size: 1.5rem;
   color: ${DarkColor};
 `
@@ -21,30 +24,35 @@ export const FooterSection = styled.section`
 export const FooterBlock = styled.div`
   border: 3px solid ${DarkColor};
   border-radius: 4px;
+
   padding: 1rem;
-`
-
-export const FooterGrid = styled.div`
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-`
-
-export const GridBigBox = styled.ul`
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
 `
 
-export const GridSmallBox = styled.div`
-  grid-row-start: 2;
-  grid-row-end: 3;
+export const BigBox = styled.ul`
+  flex: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 1rem;
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+  }
+`
+
+export const SmallBox = styled.div`
+  flex: 1 1 50%;
   padding: 0 2rem;
   display: ${({ display }) => (display ? 'flex' : 'block')};
-  text-align: center;
-  align-items: ${({ display }) => (display ? 'center' : '')};
+  justify-content: space-around;
+  align-items: center;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `
 
 export const FooterItemLi = styled.li`
@@ -52,7 +60,7 @@ export const FooterItemLi = styled.li`
   align-items: center;
   list-style: none;
   cursor: pointer;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
 `
 
 export const FooterLinks = styled(Link)`
@@ -66,8 +74,7 @@ export const FooterLinks = styled(Link)`
 
 export const FooterItem = styled.div`
   display: ${({ block }) => (block ? 'block' : 'inline')};
-  font-size: 1.7rem;
-  padding: 1rem;
+  font-size: 1.5rem;
 `
 
 export const FooterLink = styled.a`
