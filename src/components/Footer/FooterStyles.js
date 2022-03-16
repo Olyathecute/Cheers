@@ -18,6 +18,16 @@ export const FooterSection = styled.section`
   font-size: 1.5rem;
   color: ${DarkColor};
 `
+export const FooterButton = styled.section`
+  display: none;
+
+  @media screen and (max-width: 600px) {
+    width: 80vw;
+    margin: 0 auto;
+    padding-top: 2rem;
+    display: block;
+  }
+`
 
 export const FooterBlock = styled.div`
   border: 3px solid ${DarkColor};

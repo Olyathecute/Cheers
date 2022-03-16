@@ -21,6 +21,22 @@ export const Note = styled(SectionMini)`
   ${cssGrid(1, 11, 9, 12)}
   padding: 2rem;
   text-align: justify;
+
+  @media screen and (max-width: 780px) {
+    ${cssGrid(1, 11, 9, 13)}
+  }
+
+  @media screen and (max-width: 600px) {
+    ${cssGrid(1, 13, 9, 12)}
+  }
+
+  @media screen and (max-width: 450px) {
+    ${cssGrid(1, 13, 9, 13)}
+  }
+
+  @media screen and (max-width: 335px) {
+    ${cssGrid(1, 13, 9, 14)}
+  }
 `
 
 export const Plate1 = styled(PlateRight)`

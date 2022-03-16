@@ -4,7 +4,13 @@ import { LightColor, DarkColor } from '../../globalStyles'
 
 export const Nav = styled.div`
   display: flex;
-  justify-content: space;
+  justify-content: space-between;
+
+  @media screen and (max-width: 600px) {
+    width: 100vw;
+    flex-direction: row-reverse;
+    padding: 0 10px;
+  }
 `
 
 export const NavSection = styled.div`
@@ -47,6 +53,10 @@ export const NavMenu = styled.ul`
   opacity: ${({ show }) => (show ? 1 : 0)};
   visibility: ${({ show }) => (show ? 'visible' : 'hidden')};
   transition: 0.5s;
+
+  @media screen and (max-width: 600px) {
+    padding-top: 30%;
+  }
 `
 
 export const NavItem = styled.li`

@@ -1,26 +1,17 @@
 import React from 'react'
 import Navbar from '../Navbar/Navbar'
-import { HeaderWrapper, HeaderSection, HeaderItem, TelLink } from './HeaderStyles'
-import { Button } from '../../globalStyles'
+import Button from '../Button/Button'
+import { HeaderWrapper, HeaderSection } from './HeaderStyles'
 
 export default function Header() {
   return (
     <HeaderWrapper>
-      <HeaderSection>
-        <HeaderItem>
-          <Navbar />
-        </HeaderItem>
+      <HeaderSection mobile>
+        <Navbar />
       </HeaderSection>
 
       <HeaderSection>
-        <HeaderItem>
-          <TelLink light href="tel:+79999999999">
-            <Button>Call us</Button>
-          </TelLink>
-        </HeaderItem>
-        <HeaderItem>
-          <Button>Reservation</Button>
-        </HeaderItem>
+        <Button />
       </HeaderSection>
     </HeaderWrapper>
   )

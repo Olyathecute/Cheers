@@ -12,26 +12,20 @@ export const HeaderWrapper = styled.header`
   background: transparent;
   color: ${LightColor};
   font-family: 'Cormorant Garamond', serif;
+
+  @media screen and (max-width: 600px) {
+    background: url('https://liga-kamnya.ru/media/djcatalog2/images/item/2/imperador-dark-ekstra_f.jpg') no-repeat;
+    background-size: cover;
+    height: 15%;
+    justify-content: center;
+  }
 `
 
 export const HeaderSection = styled.div`
   display: flex;
   align-items: center;
-`
 
-export const HeaderItem = styled.div`
-  padding: 0 10px;
-`
-export const TelLink = styled.a`
-  text-decoration: none;
-  color: ${(props) => (props.light ? LightColor : DarkColor)};
-
-  &:active,
-  :hover {
-    color: ${(props) => (props.light ? DarkColor : LightColor)};
-  }
-
-  &:visited {
-    color: ${(props) => (props.light ? LightColor : DarkColor)};
+  @media screen and (max-width: 600px) {
+    display: ${({ mobile }) => (mobile ? 'flex' : 'none')};
   }
 `

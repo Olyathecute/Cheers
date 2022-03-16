@@ -1,5 +1,17 @@
 import React from 'react'
-import { FooterWrapper, FooterSection, FooterBlock, FooterLink, FooterItem, FooterItemLi, FooterLinks, BigBox, SmallBox } from './FooterStyles'
+import Button from '../Button/Button'
+import {
+  FooterWrapper,
+  FooterSection,
+  FooterBlock,
+  FooterLink,
+  FooterItem,
+  FooterItemLi,
+  FooterLinks,
+  BigBox,
+  SmallBox,
+  FooterButton
+} from './FooterStyles'
 import { FaInstagramSquare, FaFacebookSquare, FaTwitterSquare } from 'react-icons/fa'
 import { data, schedule } from '../../data/NavbarData'
 
@@ -42,6 +54,10 @@ export default function Footer() {
           </SmallBox>
         </FooterBlock>
       </FooterSection>
+
+      <FooterButton>
+        <Button footer={true} />
+      </FooterButton>
 
       <FooterSection>
         Made by&nbsp;
