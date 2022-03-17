@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import { LightColor, DarkColor } from '../../globalStyles'
+import { LightColor, DarkColor, GreenColor } from '../../globalStyles'
 
 export const HeaderWrapper = styled.header`
   position: fixed;
@@ -14,9 +14,8 @@ export const HeaderWrapper = styled.header`
   font-family: 'Cormorant Garamond', serif;
 
   @media screen and (max-width: 600px) {
-    background: url('https://liga-kamnya.ru/media/djcatalog2/images/item/2/imperador-dark-ekstra_f.jpg') no-repeat;
-    background-size: cover;
-    height: 15%;
+    background-color: ${GreenColor};
+    height: 10%;
     justify-content: center;
   }
 `

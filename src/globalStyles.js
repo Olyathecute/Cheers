@@ -2,6 +2,7 @@ import styled, { createGlobalStyle } from 'styled-components'
 
 export const LightColor = '#DCB993'
 export const DarkColor = '#5C3B0A'
+export const GreenColor = '#013220'
 
 const GlobalStyle = createGlobalStyle`
   *{
@@ -12,24 +13,28 @@ const GlobalStyle = createGlobalStyle`
 `
 
 export const SectionPic = styled.div`
-  background-image: url('https://www.restoran.ru/upload/resize_cache/iblock/2fb/1920_1080_11a88371ca9e7ba72ce6f5767ba9eff1a/3.jpg');
+  background-image: url('assets/hero.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-`
-export const SectionBack = styled.div`
-  background-color: #e4d6c9;
+  filter: blur(2px);
+  z-index: -10;
 `
 
 export const SectionMini = styled.div`
-  background-image: url('https://img5.goodfon.ru/wallpaper/nbig/7/20/fon-kamen-tsvet-razvody-tekstura-piatna-bezhevyi-kamennyi-vk.jpg');
+  background-image: url('assets/fon.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+`
+
+export const SectionMiniGreen = styled.div`
+  background-color: ${GreenColor};
 `
 
 export const Paragraph = styled.h2`
   color: ${DarkColor};
   font-family: 'Cormorant Garamond', serif;
   font-size: 2.5rem;
+  padding-bottom: 0.5rem;
 `
 export const Text = styled.span`
   color: ${DarkColor};
@@ -37,7 +42,7 @@ export const Text = styled.span`
   font-weight: bold;
   font-size: 1rem;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 920px) {
     font-size: 0.8rem;
   }
 `

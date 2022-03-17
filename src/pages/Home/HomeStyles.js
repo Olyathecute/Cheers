@@ -1,9 +1,9 @@
 import styled from 'styled-components'
-import { SectionBack, SectionPic, SectionMini, Plate, PlateRight } from '../../globalStyles'
+import { SectionPic, SectionMini, SectionMiniGreen, Plate, PlateRight } from '../../globalStyles'
 import { cssGrid } from '../../utils'
-import { LightColor, DarkColor } from '../../globalStyles'
+import { LightColor, DarkColor, GreenColor } from '../../globalStyles'
 
-export const HoweWrapper = styled.div`
+export const HomeWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-auto-rows: 10vh;
@@ -13,18 +13,15 @@ export const Hero = styled(SectionPic)`
   ${cssGrid(1, 13, 1, 11)}
 `
 
-export const Background = styled(SectionBack)`
+export const Background = styled.div`
+  background-color: #e4d6c9;
   ${cssGrid(1, 13, 11, 21)}
 `
 
 export const Note = styled(SectionMini)`
   ${cssGrid(1, 11, 9, 12)}
-  padding: 2rem;
+  padding: 1.5rem;
   text-align: justify;
-
-  @media screen and (max-width: 780px) {
-    ${cssGrid(1, 11, 9, 13)}
-  }
 
   @media screen and (max-width: 600px) {
     ${cssGrid(1, 13, 9, 12)}
@@ -36,6 +33,30 @@ export const Note = styled(SectionMini)`
 
   @media screen and (max-width: 335px) {
     ${cssGrid(1, 13, 9, 14)}
+  }
+
+  @media screen and (max-width: 235px) {
+    ${cssGrid(1, 13, 9, 15)}
+  }
+`
+
+export const Rectangle = styled(SectionMiniGreen)`
+  ${cssGrid(4, 13, 10, 15)};
+
+  @media screen and (max-width: 600px) {
+    ${cssGrid(1, 13, 12, 14)}
+  }
+
+  @media screen and (max-width: 450px) {
+    ${cssGrid(1, 13, 13, 15)}
+  }
+
+  @media screen and (max-width: 335px) {
+    ${cssGrid(1, 13, 14, 16)}
+  }
+
+  @media screen and (max-width: 235px) {
+    ${cssGrid(1, 13, 15, 17)}
   }
 `
 
@@ -60,21 +81,48 @@ export const Plate3 = styled(Plate)`
 `
 
 export const Caption1 = styled.h1`
-  color: ${DarkColor};
+  color: ${GreenColor};
   font-family: 'Cormorant Garamond', serif;
-  font-size: 3rem;
-  overflow: visible;
-  margin: 20px 0 0 50px;
-  text-indent: 3rem;
+  font-size: 7rem;
+  text-shadow: 5px 5px 8px ${LightColor};
 
-  ${cssGrid(4, 9, 12, '')};
+  ${cssGrid(2, 11, 4, 9)};
+
+  @media screen and (max-width: 1005px) {
+    font-size: 5rem;
+  }
+  @media screen and (max-width: 675px) {
+    font-size: 4rem;
+  }
+
+  @media screen and (max-width: 430px) {
+    font-size: 3rem;
+  }
 `
 export const Caption2 = styled.h1`
   color: ${DarkColor};
-  opacity: 0.8;
   font-family: 'Cormorant Garamond', serif;
-  font-size: 7rem;
-  text-align: center;
+  font-size: 3rem;
+  text-shadow: 1px 1px 2px ${LightColor};
 
-  ${cssGrid(2, 12, 16, '')};
+  ${cssGrid(2, 13, 3, '')};
+
+  @media screen and (max-width: 1000px) {
+    font-size: 1.5rem;
+    margin-top: 30px;
+  }
+`
+
+export const Caption3 = styled.span`
+  color: ${LightColor};
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 4rem;
+  padding: 3%;
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+
+  @media screen and (max-width: 600px) {
+    font-size: 2rem;
+  }
 `

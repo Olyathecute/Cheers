@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import { LightColor, DarkColor } from '../../globalStyles'
+import { LightColor, GreenColor } from '../../globalStyles'
 
 export const Nav = styled.div`
   display: flex;
@@ -35,8 +35,7 @@ export const MobileIcon = styled.div`
 `
 
 export const NavMenu = styled.ul`
-  background-image: url('https://liga-kamnya.ru/media/djcatalog2/images/item/2/imperador-dark-ekstra_f.jpg');
-  background-size: cover;
+  background-color: ${GreenColor};
   height: 100vh;
   width: 100vw;
   padding-top: 15%;
