@@ -74,10 +74,12 @@ export const Plate2 = styled(Plate)`
 `
 
 export const Plate3 = styled(Plate)`
-  margin: 10px 0 0 10px;
-  overflow: auto;
+  // margin: 10px 0 0 10px;
+  // overflow: auto;
+  position: absolute;
+  right: 4%;
+  top: 100%;
   height: 150px;
-  ${cssGrid(8, '', 13, '')};
 `
 
 export const Caption1 = styled.h1`

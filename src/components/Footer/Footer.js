@@ -35,7 +35,7 @@ export default function Footer() {
             ))}
           </SmallBox>
 
-          <SmallBox display>
+          <SmallBox flex>
             <FooterItem>
               <FooterLink icon href="https://instagram.com" target={'_blank'}>
                 <FaInstagramSquare size={45} />

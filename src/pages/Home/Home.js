@@ -21,11 +21,11 @@ export default function Home() {
         </Text>
       </Note>
 
-      {/* // <Plate1 src="assets/plate5.png" />
-      // <Plate2 src="assets/plate2.png" />
-      // <Plate3 src="assets/plate3.png" />
-      
-      // <Caption2>View Our Menu</Caption2> */}
+      {/* <Plate1 src="assets/plate5.png" /> */}
+      {/* <Plate2 src="assets/plate2.png" /> */}
+      {/* <Plate3 src="assets/plate3.png" /> */}
+
+      {/* <Caption2>View Our Menu</Caption2>  */}
     </HomeWrapper>
   )
 }

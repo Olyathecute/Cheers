@@ -5,6 +5,7 @@ import { LightColor, DarkColor, GreenColor } from '../../globalStyles'
 export const HeaderWrapper = styled.header`
   position: fixed;
   width: 100%;
+  z-index: 100;
 
   display: flex;
   justify-content: space-between;

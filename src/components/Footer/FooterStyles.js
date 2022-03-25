@@ -49,7 +49,7 @@ export const SmallBox = styled.div`
   flex: 1 1 50%;
   padding: 1rem 2rem;
 
-  display: ${({ display }) => (display ? 'flex' : 'block')};
+  display: ${({ flex }) => (flex ? 'flex' : 'block')};
   justify-content: space-around;
   align-items: center;
 
