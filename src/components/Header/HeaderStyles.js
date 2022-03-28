@@ -10,9 +10,11 @@ export const HeaderWrapper = styled.header`
   display: flex;
   justify-content: space-between;
   padding: 5px 10px;
-  background: transparent;
+  background: ${({ isVisibleFon }) => (isVisibleFon ? GreenColor : 'transparent')};
   color: ${LightColor};
   font-family: 'Cormorant Garamond', serif;
+
+  transition: 0.5s;
 
   @media screen and (max-width: 600px) {
     background-color: ${GreenColor};

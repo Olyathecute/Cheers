@@ -26,15 +26,12 @@ export const Note = styled(SectionMini)`
   @media screen and (max-width: 600px) {
     ${cssGrid(1, 13, 9, 12)}
   }
-
   @media screen and (max-width: 450px) {
     ${cssGrid(1, 13, 9, 13)}
   }
-
   @media screen and (max-width: 335px) {
     ${cssGrid(1, 13, 9, 14)}
   }
-
   @media screen and (max-width: 235px) {
     ${cssGrid(1, 13, 9, 15)}
   }
@@ -46,15 +43,12 @@ export const Rectangle = styled(SectionMiniGreen)`
   @media screen and (max-width: 600px) {
     ${cssGrid(1, 13, 12, 14)}
   }
-
   @media screen and (max-width: 450px) {
     ${cssGrid(1, 13, 13, 15)}
   }
-
   @media screen and (max-width: 335px) {
     ${cssGrid(1, 13, 14, 16)}
   }
-
   @media screen and (max-width: 235px) {
     ${cssGrid(1, 13, 15, 17)}
   }
@@ -96,7 +90,6 @@ export const Caption1 = styled.h1`
   @media screen and (max-width: 675px) {
     font-size: 4rem;
   }
-
   @media screen and (max-width: 430px) {
     font-size: 3rem;
   }

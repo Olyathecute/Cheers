@@ -3,9 +3,9 @@ import Navbar from '../Navbar/Navbar'
 import Button from '../Button/Button'
 import { HeaderWrapper, HeaderSection } from './HeaderStyles'
 
-export default function Header() {
+export default function Header({ isVisibleFon }) {
   return (
-    <HeaderWrapper>
+    <HeaderWrapper isVisibleFon={isVisibleFon}>
       <HeaderSection mobile>
         <Navbar />
       </HeaderSection>
