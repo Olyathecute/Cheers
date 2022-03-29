@@ -3,6 +3,7 @@ import styled, { createGlobalStyle } from 'styled-components'
 export const LightColor = '#DCB993'
 export const DarkColor = '#5C3B0A'
 export const GreenColor = '#013220'
+export const FonColor = '#e4d6c9'
 
 const GlobalStyle = createGlobalStyle`
   *{

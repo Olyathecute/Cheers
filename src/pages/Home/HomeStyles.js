@@ -15,7 +15,7 @@ export const Hero = styled(SectionPic)`
 
 export const Background = styled.div`
   background-color: #e4d6c9;
-  ${cssGrid(1, 13, 11, 21)}
+  ${cssGrid(1, 13, 11, 18)}
 `
 
 export const Note = styled(SectionMini)`
@@ -119,5 +119,20 @@ export const Caption3 = styled.span`
 
   @media screen and (max-width: 600px) {
     font-size: 2rem;
+  }
+`
+export const CaptionMenu = styled.h1`
+  ${cssGrid(1, 13, 15, '')};
+  color: ${DarkColor};
+  opacity: 0.4;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 12rem;
+  margin: 10px;
+  display: block;
+  width: 100%;
+  text-align: center;
+
+  @media screen and (max-width: 1000px) {
+    font-size: 5rem;
   }
 `

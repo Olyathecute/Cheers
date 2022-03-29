@@ -5,6 +5,9 @@ import Footer from './components/Footer/Footer'
 import Home from './pages/Home/Home'
 import About from './pages/About/About'
 import Gallery from './pages/Gallery/Gallery'
+import MenuBar from './components/menuPages/MenuBar'
+import MenuMain from './components/menuPages/MenuMain'
+import MenuDesserts from './components/menuPages/MenuDesserts'
 
 export default function App() {
   const containerRef = useRef(null)
@@ -38,6 +41,9 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
         <Route path="/Gallery" element={<Gallery />} />
+        <Route path="/menu-bar" element={<MenuBar />} />
+        <Route path="/menu" element={<MenuMain />} />
+        <Route path="/menu-desserts" element={<MenuDesserts />} />
       </Routes>
       <Footer />
     </>

@@ -21,7 +21,6 @@ export const GallerySection = styled.div`
 `
 
 export const GalleryPicture = styled.div`
-  background-color: red;
   overflow: hidden;
 `
 
