@@ -1,6 +1,6 @@
 import React from 'react'
 import { Paragraph, Text } from '../../globalStyles'
-import { AboutWrapper, TextWrapper, Hero, Background, Note, Plate1, Plate2, Picture } from './AboutStyles'
+import { AboutWrapper, TextWrapper, Hero, Background, Note, Plate1, Picture } from './AboutStyles'
 
 export default function About() {
   return (
@@ -17,9 +17,7 @@ export default function About() {
         </Text>
       </TextWrapper>
       <Picture src="assets/chief.jpg"></Picture>
-
-      {/* <Plate1 src="assets/plate1.png"></Plate1>
-      <Plate2 src="assets/plate4.png"></Plate2> */}
+      <Plate1 src="assets/plate1.png"></Plate1>
     </AboutWrapper>
   )
 }

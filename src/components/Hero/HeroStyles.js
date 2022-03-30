@@ -3,7 +3,7 @@ import { SectionPic, SectionMini, SectionMiniGreen, Plate, PlateRight, FontParag
 import { cssGrid } from '../../utils'
 import { LightColor, DarkColor, GreenColor } from '../../globalStyles'
 
-export const HomeWrapper = styled.div`
+export const HeroWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-auto-rows: 10vh;

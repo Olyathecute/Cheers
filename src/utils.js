@@ -8,3 +8,6 @@ export const cssGrid = (columnStart, columnEnd, rowStart, rowEnd) => `
 export const Animation = (move) => `
 	move_${move} 30s linear infinite;
 `
+
+export const Plate = (move) => `
+`

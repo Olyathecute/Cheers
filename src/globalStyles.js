@@ -3,7 +3,7 @@ import styled, { createGlobalStyle } from 'styled-components'
 export const LightColor = '#DCB993'
 export const DarkColor = '#5C3B0A'
 export const GreenColor = '#013220'
-export const FonColor = '#e4d6c9'
+export const FonColor = '#E4D6C9'
 export const FontLogo = 'Qwitcher Grypen, cursive'
 export const FontParagraph = 'Cormorant Garamond, serif'
 export const FontText = 'Raleway, sans-serif'
@@ -14,6 +14,10 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
 		padding: 0;
   }
+
+	::-webkit-scrollbar {
+		width: 0px;
+	}
 `
 
 export const SectionPic = styled.div`

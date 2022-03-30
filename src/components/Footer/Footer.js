@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import Button from '../Button/Button'
 import {
   FooterWrapper,
@@ -16,6 +17,11 @@ import { FaInstagramSquare, FaFacebookSquare, FaTwitterSquare } from 'react-icon
 import { data, schedule } from '../../data/NavbarData'
 
 export default function Footer() {
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
   return (
     <FooterWrapper>
       <FooterSection>

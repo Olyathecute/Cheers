@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { SectionPic, SectionMini, Plate, PlateRight } from '../../globalStyles'
+import { SectionPic, SectionMini, Plate } from '../../globalStyles'
 import { cssGrid } from '../../utils'
 import { LightColor, DarkColor, GreenColor } from '../../globalStyles'
 
@@ -73,15 +73,17 @@ export const Picture = styled.img`
   }
 `
 
-export const Plate1 = styled(PlateRight)`
-  margin: 35px 0 0 0;
-  overflow: auto;
-  ${cssGrid(2, '', 12, '')};
+export const Plate1 = styled(Plate)`
   height: 190px;
-`
-export const Plate2 = styled(Plate)`
-  margin: 10px 0 0 10px;
-  overflow: auto;
-  height: 170px;
-  ${cssGrid(10, '', 11, '')};
+  position: absolute;
+  right: 10%;
+  top: 65%;
+
+  @media screen and (max-width: 750px) {
+    top: 75%;
+  }
+
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
 `
