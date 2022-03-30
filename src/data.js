@@ -2,9 +2,14 @@ import { FaInstagramSquare, FaFacebookSquare, FaTwitterSquare } from 'react-icon
 
 export const dataSchedule = [{ text: 'Mo - Fr: 12PM - 10PM' }, { text: 'Su - Sa: 12PM - 11PM' }]
 
-export const dataGallery = Array(11)
+const gallery = Array(11)
   .fill(0)
-  .map((_, index) => `assets/food${index + 1}.jpg`)
+  .map((_, index) => ({ url: `assets/food${index + 1}.jpg`, type: 'normal' }))
+
+gallery[3].type = 'big'
+gallery[4].type = 'long'
+
+export const dataGallery = gallery
 
 export const dataNavbar = [
   {

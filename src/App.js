@@ -13,11 +13,7 @@ export default function App() {
   const containerRef = useRef(null)
   const [isVisibleFon, setIsVisibleFon] = useState(false)
 
-  const callbackFunction = (entries) => {
-    const [entry] = entries
-    if (entry.isIntersecting) setIsVisibleFon(false)
-    else setIsVisibleFon(true)
-  }
+  const callbackFunction = ([entry]) => setIsVisibleFon(!entry.isIntersecting)
 
   const options = {
     root: null,
@@ -27,10 +23,10 @@ export default function App() {
 
   useEffect(() => {
     const observer = new IntersectionObserver(callbackFunction, options)
+
     if (containerRef.current) observer.observe(containerRef.current)
-    return () => {
-      if (containerRef.current) observer.unobserve(containerRef.current)
-    }
+
+    return () => containerRef.current && observer.unobserve(containerRef.current)
   }, [containerRef.current, options])
 
   return (

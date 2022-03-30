@@ -1,31 +1,29 @@
 import React from 'react'
+import { dataGallery } from '../../data'
 import { Gallery, GallerySection, GalleryPicture, GalleryPictureBig, GalleryPictureLong, GalleryImg } from './GalleryStyles'
 
-const dataGallery = Array(11)
-  .fill(0)
-  .map((_, index) => `assets/food${index + 1}.jpg`)
+function getGalleryComponent(type) {
+  switch (type) {
+    case 'big':
+      return GalleryPictureBig
+    case 'long':
+      return GalleryPictureLong
+    default:
+      return GalleryPicture
+  }
+}
 
 export default function GalleryPage() {
   return (
     <Gallery>
       <GallerySection>
-        {dataGallery.map((_, index) => {
-          if (index === 3)
-            return (
-              <GalleryPictureBig key={index}>
-                <GalleryImg src="assets/food4.jpg"></GalleryImg>
-              </GalleryPictureBig>
-            )
-          if (index === 4)
-            return (
-              <GalleryPictureLong key={index}>
-                <GalleryImg src="assets/food5.jpg"></GalleryImg>
-              </GalleryPictureLong>
-            )
+        {dataGallery.map(({ url, type }, index) => {
+          const Component = getGalleryComponent(type)
+
           return (
-            <GalleryPicture key={index}>
-              <GalleryImg src={`assets/food${index + 1}.jpg`}></GalleryImg>
-            </GalleryPicture>
+            <Component key={index}>
+              <GalleryImg src={url}></GalleryImg>
+            </Component>
           )
         })}
       </GallerySection>
