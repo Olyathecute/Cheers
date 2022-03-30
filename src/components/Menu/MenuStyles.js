@@ -1,7 +1,6 @@
 import styled from 'styled-components'
-import { cssGrid } from '../../utils'
-import { LightColor, DarkColor, FonColor } from '../../globalStyles'
-import { Link } from 'react-router-dom'
+import { Animation } from '../../utils'
+import { LightColor, FonColor, FontParagraph, DarkColor } from '../../globalStyles'
 
 export const MenuWrapper = styled.div`
   background-color: ${FonColor};
@@ -28,13 +27,11 @@ export const MenuSection = styled.div`
       transform: translateY(-20%);
     }
   }
-
   @keyframes move_2 {
     30% {
       transform: translateY(-20%);
     }
   }
-
   @keyframes move_3 {
     70% {
       transform: translateY(-15%);
@@ -47,16 +44,11 @@ export const MenuSection = styled.div`
     animation: none;
     padding: 1rem;
   }
-
   @media screen and (max-width: 850px) {
     width: 200px;
     height: 200px;
   }
 `
-export const Animation = (move) => `
-	move_${move} 30s linear infinite;
-`
-
 export const MenuPicture = styled.img`
   width: 100%;
   height: 100%;
@@ -71,7 +63,7 @@ export const MenuPicture = styled.img`
 `
 
 export const MenuTitle = styled.span`
-  font-family: 'Cormorant Garamond', serif;
+  font-family: ${FontParagraph};
   font-size: 3rem;
   color: ${LightColor};
   position: absolute;
@@ -86,4 +78,12 @@ export const MenuTitle = styled.span`
   }
 `
 
-export const MenuLink = styled(Link)``
+export const MenuCaption = styled.h1`
+  font-family: ${FontParagraph};
+  font-size: 15vw;
+  color: ${DarkColor};
+  opacity: 0.5;
+  display: block;
+  width: 100%;
+  text-align: center;
+`

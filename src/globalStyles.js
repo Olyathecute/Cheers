@@ -4,6 +4,9 @@ export const LightColor = '#DCB993'
 export const DarkColor = '#5C3B0A'
 export const GreenColor = '#013220'
 export const FonColor = '#e4d6c9'
+export const FontLogo = 'Qwitcher Grypen, cursive'
+export const FontParagraph = 'Cormorant Garamond, serif'
+export const FontText = 'Raleway, sans-serif'
 
 const GlobalStyle = createGlobalStyle`
   *{
@@ -33,13 +36,13 @@ export const SectionMiniGreen = styled.div`
 
 export const Paragraph = styled.h2`
   color: ${DarkColor};
-  font-family: 'Cormorant Garamond', serif;
+  font-family: ${FontParagraph};
   font-size: 2.5rem;
   padding-bottom: 0.5rem;
 `
 export const Text = styled.span`
   color: ${DarkColor};
-  font-family: 'Raleway', sans-serif;
+  font-family: ${FontText};
   font-weight: bold;
   font-size: 1rem;
 
@@ -53,22 +56,23 @@ export const Plate = styled.img`
 
   @keyframes spin {
     from {
-      transform: rotate(0deg);
+      transform: rotate(360deg);
     }
     to {
-      transform: rotate(360deg);
+      transform: rotate(0deg);
     }
   }
 `
 export const PlateRight = styled.img`
-  animation: spin 50s linear infinite;
+  animation: spinRight 50s linear infinite;
   transform-origin: 40% 25%;
-  @keyframes spin {
+
+  @keyframes spinRight {
     from {
-      transform: rotate(360deg);
+      transform: rotate(0deg);
     }
     to {
-      transform: rotate(0deg);
+      transform: rotate(360deg);
     }
   }
 `

@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import { DarkColor } from '../../globalStyles'
+import { DarkColor, FontParagraph } from '../../globalStyles'
 
 export const FooterWrapper = styled.div`
   background-image: url('https://img5.goodfon.ru/wallpaper/nbig/7/20/fon-kamen-tsvet-razvody-tekstura-piatna-bezhevyi-kamennyi-vk.jpg');
   background-size: cover;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: ${FontParagraph};
   padding: 1rem;
   align-items: center;
 `

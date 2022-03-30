@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { SectionPic, SectionMini, SectionMiniGreen, Plate, PlateRight } from '../../globalStyles'
+import { SectionPic, SectionMini, SectionMiniGreen, Plate, PlateRight, FontParagraph } from '../../globalStyles'
 import { cssGrid } from '../../utils'
 import { LightColor, DarkColor, GreenColor } from '../../globalStyles'
 
@@ -15,7 +15,7 @@ export const Hero = styled(SectionPic)`
 
 export const Background = styled.div`
   background-color: #e4d6c9;
-  ${cssGrid(1, 13, 11, 18)}
+  ${cssGrid(1, 13, 11, 15)}
 `
 
 export const Note = styled(SectionMini)`
@@ -54,31 +54,9 @@ export const Rectangle = styled(SectionMiniGreen)`
   }
 `
 
-export const Plate1 = styled(PlateRight)`
-  margin: 35px 0 0 0;
-  overflow: auto;
-  ${cssGrid(2, '', 12, '')};
-  height: 190px;
-`
-export const Plate2 = styled(Plate)`
-  margin: 10px 0 0 10px;
-  overflow: auto;
-  height: 170px;
-  ${cssGrid(10, '', 11, '')};
-`
-
-export const Plate3 = styled(Plate)`
-  // margin: 10px 0 0 10px;
-  // overflow: auto;
-  position: absolute;
-  right: 4%;
-  top: 100%;
-  height: 150px;
-`
-
 export const Caption1 = styled.h1`
   color: ${GreenColor};
-  font-family: 'Cormorant Garamond', serif;
+  font-family: ${FontParagraph};
   font-size: 7rem;
   text-shadow: 5px 5px 8px ${LightColor};
 
@@ -96,7 +74,7 @@ export const Caption1 = styled.h1`
 `
 export const Caption2 = styled.h1`
   color: ${DarkColor};
-  font-family: 'Cormorant Garamond', serif;
+  font-family: ${FontParagraph};
   font-size: 3rem;
   text-shadow: 1px 1px 2px ${LightColor};
 
@@ -110,7 +88,7 @@ export const Caption2 = styled.h1`
 
 export const Caption3 = styled.span`
   color: ${LightColor};
-  font-family: 'Cormorant Garamond', serif;
+  font-family: ${FontParagraph};
   font-size: 4rem;
   padding: 3%;
   display: flex;
@@ -125,7 +103,7 @@ export const CaptionMenu = styled.h1`
   ${cssGrid(1, 13, 15, '')};
   color: ${DarkColor};
   opacity: 0.4;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: ${FontParagraph};
   font-size: 12rem;
   margin: 10px;
   display: block;

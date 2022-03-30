@@ -11,7 +11,7 @@ export default function MenuMain() {
 
   return (
     <MenuWrapper>
-      <MenuText>In this page can contain a Main Menu for restaurant</MenuText>
+      <MenuText>This page can contain a Main Menu for restaurant</MenuText>
       <MenuText>
         to&nbsp;
         <MenuLink to="/menu-bar">Bar Menu</MenuLink>

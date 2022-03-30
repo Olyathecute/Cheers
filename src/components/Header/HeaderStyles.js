@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import { LightColor, DarkColor, GreenColor } from '../../globalStyles'
+import { LightColor, DarkColor, GreenColor, FontParagraph } from '../../globalStyles'
 
 export const HeaderWrapper = styled.header`
   position: fixed;
@@ -12,7 +12,7 @@ export const HeaderWrapper = styled.header`
   padding: 5px 10px;
   background: ${({ isVisibleFon }) => (isVisibleFon ? GreenColor : 'transparent')};
   color: ${LightColor};
-  font-family: 'Cormorant Garamond', serif;
+  font-family: ${FontParagraph};
 
   transition: 0.5s;
 

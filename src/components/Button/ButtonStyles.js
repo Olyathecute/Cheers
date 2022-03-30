@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { LightColor, DarkColor } from '../../globalStyles'
+import { LightColor, DarkColor, FontParagraph } from '../../globalStyles'
 
 export const ButtonSection = styled.div`
   display: flex;
@@ -13,7 +13,7 @@ export const ButtonItem = styled.div`
 
 export const ButtonCell = styled.button`
   color: ${({ footer }) => (footer ? DarkColor : LightColor)};
-  font-family: 'Cormorant Garamond', serif;
+  font-family: ${FontParagraph};
   background: none;
   border: 3px solid ${({ footer }) => (footer ? DarkColor : LightColor)};
   border-radius: 4px;

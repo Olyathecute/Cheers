@@ -1,19 +1,20 @@
 import React from 'react'
 import { dataMenu } from '../../data'
-import { MenuWrapper, MenuSectionWrapper, MenuSection, MenuPicture, MenuTitle, MenuLink } from './MenuStyles'
+import { Link } from 'react-router-dom'
+import { MenuWrapper, MenuSectionWrapper, MenuSection, MenuPicture, MenuTitle, MenuCaption } from './MenuStyles'
 
 export default function Menu() {
   return (
     <MenuWrapper>
+      <MenuCaption>View Our Menu</MenuCaption>
       <MenuSectionWrapper>
         {dataMenu.map((element) => {
-          console.log(element.id)
           return (
             <MenuSection key={element.id} move={element.id}>
-              <MenuLink to={element.link}>
+              <Link to={element.link}>
                 <MenuTitle>{element.text}</MenuTitle>
                 <MenuPicture src={element.img}></MenuPicture>
-              </MenuLink>
+              </Link>
             </MenuSection>
           )
         })}

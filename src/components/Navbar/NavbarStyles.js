@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import { LightColor, GreenColor } from '../../globalStyles'
+import { LightColor, GreenColor, FontLogo } from '../../globalStyles'
 
 export const Nav = styled.div`
   display: flex;
@@ -20,7 +20,7 @@ export const NavSection = styled.div`
 `
 
 export const NavLogo = styled(Link)`
-  font-family: 'Qwitcher Grypen', cursive;
+  font-family: ${FontLogo};
   color: ${LightColor};
   font-size: 5rem;
   text-decoration: none;

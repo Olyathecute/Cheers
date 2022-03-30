@@ -11,7 +11,7 @@ export default function MenuDesserts() {
 
   return (
     <MenuWrapper>
-      <MenuText>In this page can contain a Desserts Menu for restaurant</MenuText>
+      <MenuText>This page can contain a Desserts Menu for restaurant</MenuText>
       <MenuText>
         to&nbsp;
         <MenuLink to="/menu">Main Menu</MenuLink>
