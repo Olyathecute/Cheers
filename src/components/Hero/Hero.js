@@ -1,6 +1,6 @@
 import React from 'react'
 import { Paragraph, Text } from '../../globalStyles'
-import { HeroWrapper, Hero, Background, Note, Rectangle, Plate1, Plate2, Plate3, Caption1, Caption2, Caption3, CaptionMenu } from './HeroStyles'
+import { HeroWrapper, Hero, Background, Note, Rectangle, Caption1, Caption2, Caption3 } from './HeroStyles'
 
 export default function HeroSection() {
   return (

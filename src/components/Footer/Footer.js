@@ -8,13 +8,12 @@ import {
   FooterLink,
   FooterItem,
   FooterItemLi,
-  FooterLinks,
+  FooterMenuLink,
   BigBox,
   SmallBox,
   FooterButton
 } from './FooterStyles'
-import { FaInstagramSquare, FaFacebookSquare, FaTwitterSquare } from 'react-icons/fa'
-import { data, schedule } from '../../data/NavbarData'
+import { dataMedia, dataNavbar, dataSchedule } from '../../data'
 
 export default function Footer() {
   const { pathname } = useLocation()
@@ -22,19 +21,20 @@ export default function Footer() {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [pathname])
+
   return (
     <FooterWrapper>
       <FooterSection>
         <FooterBlock>
           <BigBox>
-            {data.map((item, index) => (
+            {dataNavbar.map((item, index) => (
               <FooterItemLi key={index}>
-                <FooterLinks to={item.to}>{item.text}</FooterLinks>
+                <FooterMenuLink to={item.to}>{item.text}</FooterMenuLink>
               </FooterItemLi>
             ))}
           </BigBox>
           <SmallBox>
-            {schedule.map((item, index) => (
+            {dataSchedule.map((item, index) => (
               <FooterItem block key={index}>
                 {item.text}
               </FooterItem>
@@ -42,21 +42,15 @@ export default function Footer() {
           </SmallBox>
 
           <SmallBox flex>
-            <FooterItem>
-              <FooterLink icon href="https://instagram.com" target={'_blank'}>
-                <FaInstagramSquare size={45} />
-              </FooterLink>
-            </FooterItem>
-            <FooterItem>
-              <FooterLink icon href="https://facebook.com" target={'_blank'}>
-                <FaFacebookSquare size={45} />
-              </FooterLink>
-            </FooterItem>
-            <FooterItem>
-              <FooterLink icon href="https://twitter.com" target={'_blank'}>
-                <FaTwitterSquare size={45} />
-              </FooterLink>
-            </FooterItem>
+            {dataMedia.map((item, index) => {
+              return (
+                <FooterItem key={index}>
+                  <FooterLink icon href={item.link} target={'_blank'}>
+                    {item.icon}
+                  </FooterLink>
+                </FooterItem>
+              )
+            })}
           </SmallBox>
         </FooterBlock>
       </FooterSection>

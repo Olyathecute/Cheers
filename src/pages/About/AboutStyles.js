@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { SectionPic, SectionMini, Plate } from '../../globalStyles'
 import { cssGrid } from '../../utils'
-import { LightColor, DarkColor, GreenColor } from '../../globalStyles'
+import { GreenColor } from '../../globalStyles'
 
 export const AboutWrapper = styled.div`
   display: grid;

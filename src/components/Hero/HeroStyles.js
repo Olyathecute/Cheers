@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import { SectionPic, SectionMini, SectionMiniGreen, Plate, PlateRight, FontParagraph } from '../../globalStyles'
+import { SectionPic, SectionMini, FontParagraph } from '../../globalStyles'
 import { cssGrid } from '../../utils'
-import { LightColor, DarkColor, GreenColor } from '../../globalStyles'
+import { LightColor, DarkColor, GreenColor, FonColor } from '../../globalStyles'
 
 export const HeroWrapper = styled.div`
   display: grid;
@@ -14,7 +14,7 @@ export const Hero = styled(SectionPic)`
 `
 
 export const Background = styled.div`
-  background-color: #e4d6c9;
+  background-color: ${FonColor};
   ${cssGrid(1, 13, 11, 15)}
 `
 
@@ -37,7 +37,8 @@ export const Note = styled(SectionMini)`
   }
 `
 
-export const Rectangle = styled(SectionMiniGreen)`
+export const Rectangle = styled.div`
+  background-color: ${GreenColor};
   ${cssGrid(4, 13, 10, 15)};
 
   @media screen and (max-width: 600px) {
@@ -55,12 +56,11 @@ export const Rectangle = styled(SectionMiniGreen)`
 `
 
 export const Caption1 = styled.h1`
+  ${cssGrid(2, 11, 4, 9)};
   color: ${GreenColor};
   font-family: ${FontParagraph};
   font-size: 7rem;
   text-shadow: 5px 5px 8px ${LightColor};
-
-  ${cssGrid(2, 11, 4, 9)};
 
   @media screen and (max-width: 1005px) {
     font-size: 5rem;
@@ -73,12 +73,11 @@ export const Caption1 = styled.h1`
   }
 `
 export const Caption2 = styled.h1`
+  ${cssGrid(2, 13, 3, '')};
   color: ${DarkColor};
   font-family: ${FontParagraph};
   font-size: 3rem;
   text-shadow: 1px 1px 2px ${LightColor};
-
-  ${cssGrid(2, 13, 3, '')};
 
   @media screen and (max-width: 1000px) {
     font-size: 1.5rem;

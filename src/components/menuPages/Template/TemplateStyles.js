@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import { LightColor, DarkColor, FonColor, GreenColor, FontParagraph } from '../../globalStyles'
+import { DarkColor, FonColor, GreenColor, FontParagraph } from '../../../globalStyles'
 
 export const MenuWrapper = styled.div`
   background-color: ${FonColor};

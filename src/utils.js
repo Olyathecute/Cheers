@@ -9,5 +9,20 @@ export const Animation = (move) => `
 	move_${move} 30s linear infinite;
 `
 
-export const Plate = (move) => `
+export const PlateStyle = (height, top, left, position, heightMedia, topMedia, leftMedia, topMedia1) => `
+  height: ${height};
+  position: absolute;
+  top: ${top};
+  left: ${left};
+
+  @media screen and (max-width: 600px) {
+    position: ${position};
+    height: ${heightMedia};
+		top: ${topMedia};
+		left: ${leftMedia};
+  }
+
+	@media screen and (max-width: 320px) {
+		top: ${topMedia1};
+  }
 `

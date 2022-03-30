@@ -13,6 +13,7 @@ export const MenuSectionWrapper = styled.div`
   justify-content: space-around;
   align-items: flex-end;
   flex-wrap: wrap;
+
   @media screen and (max-width: 850px) {
   }
 `
@@ -44,6 +45,7 @@ export const MenuSection = styled.div`
     animation: none;
     padding: 1rem;
   }
+
   @media screen and (max-width: 850px) {
     width: 200px;
     height: 200px;
@@ -56,6 +58,7 @@ export const MenuPicture = styled.img`
   filter: brightness(65%);
   cursor: pointer;
   transition: 0.7s;
+
   &:hover,
   :active {
     filter: brightness(100%);

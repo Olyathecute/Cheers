@@ -39,16 +39,13 @@ export const NavMenu = styled.ul`
   height: 100vh;
   width: 100vw;
   padding-top: 15%;
-
   position: fixed;
   top: 0;
   left: 0;
-
   display: flex;
   align-items: center;
   list-style: none;
   flex-direction: column;
-
   opacity: ${({ show }) => (show ? 1 : 0)};
   visibility: ${({ show }) => (show ? 'visible' : 'hidden')};
   transition: 0.5s;

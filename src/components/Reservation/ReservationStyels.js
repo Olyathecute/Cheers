@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { GreenColor, DarkColor, FonColor, PlateRight, LightColor, FontText } from '../../globalStyles'
+import { GreenColor, DarkColor, LightColor, FontText } from '../../globalStyles'
 
 export const Wrapper = styled.div`
   background-color: rgba(0, 0, 0, 0.5);
@@ -8,8 +8,8 @@ export const Wrapper = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  opacity: ${({ show }) => (show ? 1 : 0)};
-  visibility: ${({ show }) => (show ? 'visible' : 'hidden')};
+  opacity: ${({ reservation }) => (reservation ? 1 : 0)};
+  visibility: ${({ reservation }) => (reservation ? 'visible' : 'hidden')};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +22,7 @@ export const ResBlock = styled.div`
   display: flex;
   flex-direction: column;
 `
-export const ResText = styled.label`
+export const ResText = styled.span`
   margin: 5px;
   font-size: 1.5rem;
   color: ${LightColor};
@@ -46,7 +46,6 @@ export const ResButton = styled.button`
   cursor: pointer;
   padding: 5px 10px;
   margin: 10px;
-
   font-size: 1.5rem;
 
   &:hover {

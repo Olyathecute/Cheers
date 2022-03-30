@@ -34,10 +34,6 @@ export const SectionMini = styled.div`
   background-repeat: no-repeat;
 `
 
-export const SectionMiniGreen = styled.div`
-  background-color: ${GreenColor};
-`
-
 export const Paragraph = styled.h2`
   color: ${DarkColor};
   font-family: ${FontParagraph};

@@ -21,7 +21,6 @@ export const ButtonCell = styled.button`
   padding: 5px 10px;
   font-size: 2rem;
   transition-duration: 0.2s;
-
   position: relative;
 
   &:hover {

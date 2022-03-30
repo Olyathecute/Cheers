@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { FonColor, Plate, PlateRight } from '../../globalStyles'
+import { PlateStyle } from '../../utils'
 
 export const PlatesWrapper = styled.div`
   background-color: ${FonColor};
@@ -13,38 +14,13 @@ export const PlatesWrapper = styled.div`
 `
 
 export const Plate1 = styled(PlateRight)`
-  height: 200px;
-  position: absolute;
-  left: 10%;
-  top: 120%;
-
-  @media screen and (max-width: 600px) {
-    position: relative;
-    height: 40vw;
-  }
+  ${PlateStyle('200px', '120%', '10%', 'relative', '40vw')};
 `
 
 export const Plate2 = styled(Plate)`
-  height: 180px;
-  position: absolute;
-  right: 10%;
-  top: 140%;
-
-  @media screen and (max-width: 600px) {
-    position: relative;
-    top: 150%;
-    height: 35vw;
-  }
+  ${PlateStyle('180px', '137%', '70%', 'absolute', '35vw', '150%', '52%')};
 `
 
 export const Plate3 = styled(Plate)`
-  height: 150px;
-  position: absolute;
-  right: 4%;
-  top: 100%;
-
-  @media screen and (max-width: 600px) {
-    height: 20vw;
-    top: 120%;
-  }
+  ${PlateStyle('130px', '100%', '78%', 'absolute', '25vw', '112%', '70%', '125%')};
 `
