@@ -3,8 +3,7 @@
 1. npm i
 2. npm start
 
-
-## Website presentation 
+## Website demonstration 
 
 ### Home page
 ![CheersHome](https://user-images.githubusercontent.com/72819725/162207649-b858fdb1-9b91-4a99-98e0-0579f91035ea.gif)
