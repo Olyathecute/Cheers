@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/Cheers/static/js/main.c1d30ec1.js",
+    "main.js": "/Cheers/static/js/main.62c8f63f.js",
     "index.html": "/Cheers/index.html",
-    "main.c1d30ec1.js.map": "/Cheers/static/js/main.c1d30ec1.js.map"
+    "main.62c8f63f.js.map": "/Cheers/static/js/main.62c8f63f.js.map"
   },
   "entrypoints": [
-    "static/js/main.c1d30ec1.js"
+    "static/js/main.62c8f63f.js"
   ]
 }
