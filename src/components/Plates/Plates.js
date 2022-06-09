@@ -5,7 +5,7 @@ export default function Plates() {
   return (
     <PlatesWrapper>
       <Plate1 src="../assets/plate5.png" />
-      <Plate2 src="assets/plate2.png" />
+      <Plate2 src="../plate2.png" />
       <Plate3 src="assets/plate3.png" />
     </PlatesWrapper>
   )
