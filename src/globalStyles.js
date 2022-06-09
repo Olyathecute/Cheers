@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
 `
 
 export const SectionPic = styled.div`
-  background-image: url('assets/hero.jpg');
+  background-image: url('../Cheers/assets/hero.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   filter: blur(2px);
@@ -29,7 +29,7 @@ export const SectionPic = styled.div`
 `
 
 export const SectionMini = styled.div`
-  background-image: url('assets/fon.jpg');
+  background-image: url('../Cheers/assets/fon.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 `

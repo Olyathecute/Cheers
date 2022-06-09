@@ -16,8 +16,8 @@ export default function About() {
           in Poitiers and has lived and worked in New York, Moscow and Tokyo – bringing with him a broad range of traditions and local cuisines.
         </Text>
       </TextWrapper>
-      <Picture src="assets/chief.jpg"></Picture>
-      <Plate1 src="assets/plate1.png"></Plate1>
+      <Picture src="../Cheers/assets/chief.jpg"></Picture>
+      <Plate1 src="../Cheers/assets/plate1.png"></Plate1>
     </AboutWrapper>
   )
 }
