@@ -5,7 +5,7 @@ import { DarkColor, FonColor, GreenColor, FontParagraph } from '../../../globalS
 export const MenuWrapper = styled.div`
   background-color: ${FonColor};
   width: 100vw;
-  height: 60vh;
+  height: 100vh;
   padding-top: 150px;
   text-align: center;
 `
